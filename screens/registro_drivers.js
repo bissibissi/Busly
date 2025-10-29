@@ -1,9 +1,8 @@
-
-/*import React, { useState } from "react";
+import React, { useState } from "react";
 import { View, Text, TextInput, StyleSheet, TouchableOpacity, Alert } from "react-native";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { ref, set } from "firebase/database";
-import { auth, db } from "../firebase";
+import { auth, db } from "../config/firebase";
 
 export default function registro_drivers({ navigation }) {
   const [name, setName] = useState("");
@@ -139,4 +138,4 @@ const styles = StyleSheet.create({
     marginTop: 15,
     fontSize: 14,
   },
-});*/
+});

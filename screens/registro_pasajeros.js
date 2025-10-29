@@ -1,10 +1,6 @@
-
-
-
-// src/screens/PassengerRegisterScreen.jsx
-/*import React, { useState } from "react";
+import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from "react-native";
-import { auth, db } from "../firebase";
+import { auth, db } from "../config/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { ref, set } from "firebase/database";
 import { useNavigation } from "@react-navigation/native";
@@ -122,4 +118,4 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: "500",
   },
-});*/
+});
