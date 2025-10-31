@@ -1,7 +1,8 @@
-
+// config/firebase.js
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-
+import { getAuth } from "firebase/auth";
+import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAPDz9JHW0mZ7FAnb59ddsw-gefE6ImxX0",
@@ -14,6 +15,13 @@ const firebaseConfig = {
   measurementId: "G-Y1KCVZJJ0Y"
 };
 
-
+// Inicializar Firebase
 const app = initializeApp(firebaseConfig);
+
+// Inicializar servicios
 const analytics = getAnalytics(app);
+const auth = getAuth(app);
+const db = getDatabase(app);
+
+// Exportar para usar en toda la app
+export { app, analytics, auth, db };

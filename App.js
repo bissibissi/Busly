@@ -6,6 +6,8 @@ import RegistroPasajeros from './screens/registro_pasajeros';
 import RegistroDrivers from './screens/registro_drivers';
 import HomeDrivers from './screens/home_drivers';
 import HomePasajeros from './screens/home_pasajeros';
+import login_drivers from "./screens/login_drivers";
+
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +21,7 @@ export default function App() {
         <Stack.Screen name="registro_pasajeros" component={RegistroPasajeros} />
          <Stack.Screen name="home pasajeros" component={HomePasajeros} />
          <Stack.Screen name="home drivers" component={HomeDrivers} />
+         <Stack.Screen name="login_drivers" component={login_drivers} />
       </Stack.Navigator>
     </NavigationContainer>
   );

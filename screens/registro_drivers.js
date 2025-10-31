@@ -38,7 +38,7 @@ export default function registro_drivers({ navigation }) {
       });
 
       Alert.alert("Registro exitoso", "Conductor registrado correctamente");
-      navigation.navigate("LoginScreen");
+      navigation.navigate("login_drivers");
 
     } catch (error) {
       Alert.alert("Error de registro", error.message);
