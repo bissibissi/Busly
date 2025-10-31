@@ -21,7 +21,7 @@ export default function login_drivers({ navigation }) {
 
           if (snapshot.exists() && snapshot.val().role === "driver") {
             await AsyncStorage.setItem("driverUser", JSON.stringify(user));
-            navigation.replace("DriverHome");
+            navigation.replace("home_driver");
           }
         } catch (error) {
           console.log("Error comprobando sesión:", error);
