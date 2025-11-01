@@ -19,8 +19,8 @@ export default function App() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="registro_drivers" component={RegistroDrivers} />
         <Stack.Screen name="registro_pasajeros" component={RegistroPasajeros} />
-         <Stack.Screen name="home pasajeros" component={HomePasajeros} />
-         <Stack.Screen name="home drivers" component={HomeDrivers} />
+         <Stack.Screen name="home_pasajeros" component={HomePasajeros} />
+         <Stack.Screen name="home_drivers" component={HomeDrivers} />
          <Stack.Screen name="login_drivers" component={login_drivers} />
       </Stack.Navigator>
     </NavigationContainer>
